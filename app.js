@@ -5,6 +5,7 @@ const app = Vue.createApp({
             userID: 123,
             userLoggedIn: true,
             count: 0,
+            mooses: [],
         };
     },
     methods: {
@@ -13,6 +14,8 @@ const app = Vue.createApp({
         },
         addMoose(number) {
         this.count+=number
+        this.mooses+=1
+
         /* the same as this.count=this.count+number */
       }
     },
