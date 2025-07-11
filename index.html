@@ -12,11 +12,17 @@
         <p>{{ userID }}</p>
         <p v-if = "userLoggedIn">Be vagyok jelentkezve</p>
         <h3 @click="clickMe">Click me</h3>
-        <p>{{ "Moose count: " + count }}</p>
+        
         <button v-on:click="addMoose(1)">+1</button>
       
         <button v-on:click="addMoose(-1)">-1</button>
+<<<<<<< HEAD
          <p v-if = "mooseLimit">Kérem ne generáljon több szarvast!</p>
+=======
+        <p v-if = "count" >{{ "Moose count: " + count }}</p>
+        <p v-for = "x in mooses"><img src="https://cdn.britannica.com/93/7993-050-2BFCF7C4/Moose-antlers.jpg" width="400px"></p>
+
+>>>>>>> 713095d9f7f6be923d6be984961459c1e2f33535
     </div>
     <script src="./app.js">
         
