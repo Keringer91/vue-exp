@@ -5,6 +5,7 @@ const app = Vue.createApp({
             userID: 123,
             userLoggedIn: true,
             count: 0,
+            mooseLimit: 0,
         };
     },
     methods: {
@@ -13,6 +14,7 @@ const app = Vue.createApp({
         },
         addMoose(number) {
         this.count+=number
+        if (this.count==10) { this.mooseLimit= 1 }
         /* the same as this.count=this.count+number */
       }
     },
