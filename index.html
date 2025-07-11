@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>Vue Teszt</title>
+</head>
+<body>
+    <div id="app">
+        <p>{{ user }}</p>
+        <p>{{ userID }}</p>
+        <p v-if = "userLoggedIn">Be vagyok jelentkezve</p>
+        <h3 @click="clickMe">Click me</h3>
+        <p>{{ "Moose count: " + count }}</p>
+        <button v-on:click="addMoose(1)">+1</button>
+        <button v-on:click="addMoose(5)">+5</button>
+        <button v-on:click="addMoose(-1)">-1</button>
+    </div>
+    <script src="./app.js">
+        
+    </script>
+</body>
+</html>
